@@ -1,0 +1,397 @@
+:root {
+    --main-color : #2196f3 ;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .containar {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+@media (min-width: 768px) {
+    .containar {
+      width: 750px;
+    }
+  }
+  
+  /* Medium */
+  @media (min-width: 992px) {
+    .containar {
+      width: 970px;
+    }
+  }
+  
+  /* Large */
+  @media (min-width: 1200px) {
+    .containar {
+      width: 1170px;
+    }
+    
+  }
+  .main-title {
+    text-transform: uppercase;
+    margin: 0 auto 80px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  .main-title::before,
+  .main-title::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .main-title::before {
+    left: -30px;
+  }
+  .main-title::after {
+    right: -30px;
+  }
+  .main-title:hover::before {
+    z-index: -1;
+    animation: left-move 0.5s linear forwards;
+  }
+  .main-title:hover::after {
+    z-index: -1;
+    animation: right-move 0.5s linear forwards;
+  }
+  .main-title:hover {
+    color: white;
+    border: 2px solid white;
+    transition-delay: 0.3s;
+  }
+  @keyframes left-move {
+    50% {
+      left: 0;
+      width: 12px;
+      height: 12px;
+    }
+    100% {
+      left: 0;
+      border-radius: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @keyframes right-move {
+    50% {
+      right: 0;
+      width: 12px;
+      height: 12px;
+    }
+    100% {
+      right: 0;
+      border-radius: 0;
+      width: 100%;
+      height: 100%;
+    }
+}
+/* 
+  /////////// start header /////  */
+  header {
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      header .logo {
+       margin-bottom: 20px;
+      }
+      .links li {
+        padding: 15px;
+      }
+  }
+  header .logo {
+    color: #1787e0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .links  {
+    display: flex;
+  }
+  .links li  {
+    margin-left: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    border-bottom: 1px solid #1787e0;
+  }
+  .links li:hover {
+    background-color: #1787e0;
+    color: white;
+    border-radius:8px ;
+  }
+  /* /////////// End header /////  */
+  /* /////////// start landing //////////  */
+  .landing {
+background-color: #eee;
+height: 90vh;
+  }
+  .lan-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 80px;
+    flex-wrap: wrap;
+  }
+  @media (max-width : 768px) {
+    .lan-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .lan-content img {
+       display: none;
+        }
+        .landing-cont {
+           text-align: center;
+           width: fit-content;
+          }
+          .landing-cont h3 {
+            font-size: 50px;
+          }
+          .landing-cont p {
+            color: #1787e0;
+          }
+  }
+  @media (min-width :768px) {
+    .landing-cont {
+        margin-top: 100px;
+        width: 520px;
+      }
+  }
+  .landing-cont {
+    margin-top: 100px;
+  }
+  .landing-cont h3 {
+    font-size: 30px;
+  }
+  .landing-cont p {
+    font-size: 25px;
+    line-height: 35px;
+    color: gray;
+  }
+  .lan-content img {
+  width: 600px;
+  }
+  /* /////////// End  landing //////////  */
+  /* //////////// start articles //////////////  */
+    .articles {
+        padding: 70px 0;
+    }
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .boxes .box{
+      width: 247px;
+      height: 375px;
+      background-color: #eee;
+      border-radius: 8px;
+      transition: 0.5s;
+
+    }
+    .articles .boxes .box:hover{
+       margin-top: -10px;
+       box-shadow: 0 3px 0 rgb(55, 55, 55) ;
+      }
+    @media (max-width :768px) {
+        .boxes .box{
+            width: 330px;
+            height: fit-content;
+            background-color: #eee;
+          }
+    }
+    .boxes .box .background1 {
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/cat-01.jpg);
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .boxes .box .background2 {
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/cat-02.jpg);
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .boxes .box .background3 {
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/cat-03.jpg);
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .boxes .box .background4 {
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/cat-04.jpg);
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .boxes .box .background5 {
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/cat-05.jpg);
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .boxes .box .background6 {
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/cat-06.jpg);
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .boxes .box .background7 {
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/cat-07.jpg);
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .boxes .box .background8 {
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/cat-08.jpg);
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .boxes .box h4 {
+        padding: 20px;
+        font-size: 25px;
+    }
+    .boxes .box p {
+        /* margin-left: 20px; */
+        padding: 10px;
+        padding-left: 20px;
+        line-height: 25px;
+        color: gray;
+        margin-bottom: 25px;
+        width: 100%;
+        border-bottom: 1px solid black;
+        
+    }
+    .art-cont {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+        margin-bottom: 5px;
+        color: #1787e0;
+    }
+    .art-cont span {
+        font-weight: bold;
+    }
+ 
+  /* //////////// End articles //////////////  */
+
+  /* ///////////// start gallery /////  */
+    .gallery  .boxes .box1{
+    width: 330px;
+    height: 385px;
+    background-color: #eee;
+    border-radius: 8px;
+    transition: 0.5s;
+   
+  }
+  .gallery .boxes {
+    gap: 30px;
+    border-radius: -1px;
+    padding-bottom: 50px;
+  }
+ .gallery .boxes .box1 .background1 {
+   background-image: url(../images/gallery-01.png);
+   background-size: cover;
+    width: 300px;
+    height: 355px;
+    margin: 15px;
+    text-align: center;
+ }
+ .gallery .boxes .box1 .background2 {
+   background-image: url(../images/gallery-02.png);
+   background-size: cover;
+    width: 300px;
+    height: 355px;
+    margin: 15px;
+    text-align: center;
+ }
+ .gallery .boxes .box1 .background3 {
+   background-image: url(../images/gallery-03.jpg);
+   background-size: cover;
+    width: 300px;
+    height: 355px;
+    margin: 15px;
+    text-align: center;
+ }
+ .gallery .boxes .box1 .background4 {
+   background-image: url(../images/gallery-04.png);
+   background-size: cover;
+    width: 300px;
+    height: 355px;
+    margin: 15px;
+    text-align: center;
+ }
+ .gallery .boxes .box1 .background5 {
+   background-image: url(../images/gallery-05.jpg);
+   background-size: cover;
+    width: 300px;
+    height: 355px;
+    margin: 15px;
+    text-align: center;
+ }
+ .gallery .boxes .box1 .background6 {
+   background-image: url(../images/gallery-06.png);
+   background-size: cover;
+    width: 300px;
+    height: 355px;
+    margin: 15px;
+    text-align: center;
+ }
+  /* ///////////// End gallery /////  */
