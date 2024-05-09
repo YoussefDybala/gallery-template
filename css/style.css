@@ -55,7 +55,7 @@ html {
     margin: 0 auto 80px;
     border: 2px solid black;
     padding: 10px 20px;
-    font-size: 30px;
+    font-size: 25px;
     width: fit-content;
     position: relative;
     z-index: 1;
@@ -610,3 +610,8 @@ top: 100px;
    }
  }
   /* //////////// end skills ///////////  */
+  /* /////////////// start how it works //////////  */
+  .works {
+    padding: 70px 0;
+  }
+  /* /////////////// End how it works //////////  */
