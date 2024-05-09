@@ -501,6 +501,10 @@ top: 100px;
     height: 250px;
     position: relative;
     box-shadow: 0 5px 5px gray;
+    transition: 0.3s;
+  }
+  .services .boxes .box2:hover {
+    margin-top: -10px;
   }
   .serv-cont {
     text-align: center;
@@ -551,3 +555,58 @@ top: 100px;
   transform: skewX(-30deg);
  }
   /* ///////////// end services //////////  */
+
+  /* //////////// start skills ///////////  */
+ .skills {
+  padding: 70px 0;
+  background-color: #eee;
+ }
+ @media (max-width :768px) {
+  .skill-cont img {
+    display: none;
+  }
+ }
+ .skill-cont {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+ }
+ .progres {
+  width: 600px;
+  height: 30px;
+  background-color: white;
+  margin: 20px 0;
+ }
+ .progres span {
+  display: block;
+  background-color: #1787e0;
+  height: 100%;
+  position: relative;
+ }
+ .progres span::after {
+  content: attr(data-progress);
+  position: absolute;
+  color: #1787e0;
+  background-color: white;
+  border: 1px solid #1787e0;
+  padding: 3px;
+  border-radius: 8px;
+  right: -20px;
+  top: -35px;
+  }
+  .progres span::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid  #1787e0;
+  }
+ @media (max-width :768px) {
+  .progres {
+    width: 330px;
+    height: 30px;
+    background-color: white;
+    margin: 20px 0;
+   }
+ }
+  /* //////////// end skills ///////////  */
