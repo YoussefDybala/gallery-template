@@ -120,8 +120,6 @@ html {
 }
 /* 
   /////////// start header /////  */
-  header {
-  }
   nav {
     display: flex;
     justify-content: space-between;
@@ -140,7 +138,8 @@ html {
       }
       .links li {
 
-      
+        position: relative;
+        left: -15px;
         
       }
   }
@@ -155,7 +154,7 @@ html {
   }
   .links li  {
     margin-left: 10px;
-    padding: 5px;
+    padding: 3px;
     margin-inline: 5px;
     transition: 0.3s;
     border-bottom: 1px solid #1787e0;
@@ -230,11 +229,11 @@ height: 90vh;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 25px;
     }
     .boxes .box{
-      width: 247px;
-      height: 375px;
+      width: 265px;
+      height: 405px;
       background-color: #eee;
       border-radius: 8px;
       transition: 0.5s;
@@ -256,56 +255,56 @@ height: 90vh;
     }
     .boxes .box .background1 {
         width: 100%;
-        height: 150px;
+        height: 180px;
         background-image: url(../images/cat-01.jpg);
         background-size: cover;
         border-radius: 8px;
     }
     .boxes .box .background2 {
         width: 100%;
-        height: 150px;
+        height: 180px;
         background-image: url(../images/cat-02.jpg);
         background-size: cover;
         border-radius: 8px;
     }
     .boxes .box .background3 {
         width: 100%;
-        height: 150px;
+        height: 180px;
         background-image: url(../images/cat-03.jpg);
         background-size: cover;
         border-radius: 8px;
     }
     .boxes .box .background4 {
         width: 100%;
-        height: 150px;
+        height: 180px;
         background-image: url(../images/cat-04.jpg);
         background-size: cover;
         border-radius: 8px;
     }
     .boxes .box .background5 {
         width: 100%;
-        height: 150px;
+        height: 180px;
         background-image: url(../images/cat-05.jpg);
         background-size: cover;
         border-radius: 8px;
     }
     .boxes .box .background6 {
         width: 100%;
-        height: 150px;
+        height: 180px;
         background-image: url(../images/cat-06.jpg);
         background-size: cover;
         border-radius: 8px;
     }
     .boxes .box .background7 {
         width: 100%;
-        height: 150px;
+        height: 180px;
         background-image: url(../images/cat-07.jpg);
         background-size: cover;
         border-radius: 8px;
     }
     .boxes .box .background8 {
         width: 100%;
-        height: 150px;
+        height: 180px;
         background-image: url(../images/cat-08.jpg);
         background-size: cover;
         border-radius: 8px;
@@ -344,65 +343,163 @@ height: 90vh;
     padding: 70px 0;
   }
     .gallery  .boxes .box1{
-    width: 355px;
-    height: 355px;
+    width: 335px;
+    height: 335px;
       background-color: white;
     border-radius: 8px;
     transition: 0.5s;
    
   }
+
   .gallery .boxes {
     gap: 30px;
     border-radius: -1px;
     padding-bottom: 50px;
   }
  .gallery .boxes .box1 .background img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
+    height: 100%;
     padding: 15px;
     transition: 0.3s;
  }
  .gallery .boxes .box1 .background img:hover{
   transform:rotate(1deg);
  }
- .gallery .boxes .box1 .background2 {
-   background-image: url(../images/gallery-02.png);
-   background-size: cover;
-    width: 300px;
-    height: 355px;
-    margin: 15px;
-    text-align: center;
- }
- .gallery .boxes .box1 .background3 {
-   background-image: url(../images/gallery-03.jpg);
-   background-size: cover;
-    width: 300px;
-    height: 355px;
-    margin: 15px;
-    text-align: center;
- }
- .gallery .boxes .box1 .background4 {
-   background-image: url(../images/gallery-04.png);
-   background-size: cover;
-    width: 300px;
-    height: 355px;
-    margin: 15px;
-    text-align: center;
- }
- .gallery .boxes .box1 .background5 {
-   background-image: url(../images/gallery-05.jpg);
-   background-size: cover;
-    width: 300px;
-    height: 355px;
-    margin: 15px;
-    text-align: center;
- }
- .gallery .boxes .box1 .background6 {
-   background-image: url(../images/gallery-06.png);
-   background-size: cover;
-    width: 300px;
-    height: 355px;
-    margin: 15px;
-    text-align: center;
- }
+ 
   /* ///////////// End gallery /////  */
+  /* //////////////// start testimonials /////////////  */
+    .testi {
+      padding: 70px 0;
+    }
+    .testi .boxes {
+      gap: 40px;
+
+    }
+    .testi .boxes .box2 {
+      background-color: #eee;
+      width: 350px;
+      height: 250px;
+      position: relative;
+      border-radius: 8px;
+    }
+    @media (max-width :768px) {
+      .boxes .box2{
+          width: 330px;
+          height: fit-content;
+          background-color: #eee;
+        }
+  }
+  .testi .boxes .box2 img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid rgb(255, 255, 255);
+    right: 0;
+    top: -60px;
+  }
+  .testi .boxes .box2 .test-cont {
+    padding: 25px;
+  }
+  .testi .boxes .box2 .test-cont h4 {
+    color: #1787e0;
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .testi .boxes .box2 .test-cont span {
+    color: gray;
+    font-size: 18px;
+  }
+  .testi .boxes .box2 .test-cont .stars {
+    font-size: 15px;
+    margin: 8px 0;
+  }
+  .testi .boxes .box2 .test-cont .stars .filled {
+    color: orange ;
+  }
+  .testi .boxes .box2 .test-cont p {
+    color: gray;
+    font-size: 19px;
+    line-height: 28px;
+  }
+  /* //////////////// start testimonials /////////////  */
+  /* /////////// start team members ////////////  */
+  .team-members{
+    padding: 70px 0;
+    background-color: #eee;
+  }
+  .team-members .boxes {
+    gap: 30px 70px; 
+  }
+  .team-members .boxes .box3 {
+    background-color: white;
+    width: 310px;
+    height: 400px;
+    position: relative;
+    border-radius: 8px;
+  }
+  @media (max-width :768px) {
+    .boxes .box3{
+        width: 280px;
+        height: fit-content;
+        background-color: #eee;
+        position: relative;
+        right: -28px;
+      }
+}
+.team-members .boxes .box3 img {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  border-radius: 8px;
+  left: -30px;
+  top: 30px;
+  transition: 0.3s;
+  /* display: none; */
+}
+.team-members .boxes .box3 img:hover {
+  filter: sepia(70%);
+}
+.team-members ul li {
+  padding: 15px;
+  width: fit-content;
+  color: gray;
+  position: relative;
+  left: 262px;
+  top: 100px;
+  transition: 0.3s;
+}
+.team-members ul li:hover {
+  color: #1787e0;
+}
+.team-members .team-cont {
+position: relative;
+padding: 20px;
+top: 100px;
+}
+.team-members .team-cont h4 {
+  font-size: 23px;
+  color: #1787e0;
+  margin-top: 15px;
+}
+.team-members .team-cont p {
+  margin: 8px 0;
+  color: gray;
+  font-size: 18px;
+}
+  /* /////////// start team members ////////////  */
+  /* ///////////// start services //////////  */
+  .services {
+    padding: 70px 0;
+  }
+  .services .boxes {
+    gap: 40px;
+  }
+  .services .boxes .box2 {
+    background-color: #eee;
+    width: 350px;
+    height: 250px;
+    position: relative;
+    box-shadow: 0 5px 5px gray;
+  }
+  /* ///////////// end services //////////  */
