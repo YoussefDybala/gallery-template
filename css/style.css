@@ -139,7 +139,9 @@ html {
        margin-bottom: 20px;
       }
       .links li {
-        padding: 15px;
+
+      
+        
       }
   }
   header .logo {
@@ -154,6 +156,7 @@ html {
   .links li  {
     margin-left: 10px;
     padding: 5px;
+    margin-inline: 5px;
     transition: 0.3s;
     border-bottom: 1px solid #1787e0;
   }
@@ -247,6 +250,9 @@ height: 90vh;
             height: fit-content;
             background-color: #eee;
           }
+          .art-cont {
+            padding-bottom: 20px;
+        }
     }
     .boxes .box .background1 {
         width: 100%;
@@ -333,10 +339,14 @@ height: 90vh;
   /* //////////// End articles //////////////  */
 
   /* ///////////// start gallery /////  */
-    .gallery  .boxes .box1{
-    width: 330px;
-    height: 385px;
+  .gallery {
     background-color: #eee;
+    padding: 70px 0;
+  }
+    .gallery  .boxes .box1{
+    width: 355px;
+    height: 355px;
+      background-color: white;
     border-radius: 8px;
     transition: 0.5s;
    
@@ -346,13 +356,14 @@ height: 90vh;
     border-radius: -1px;
     padding-bottom: 50px;
   }
- .gallery .boxes .box1 .background1 {
-   background-image: url(../images/gallery-01.png);
-   background-size: cover;
-    width: 300px;
+ .gallery .boxes .box1 .background img{
+    width: 355px;
     height: 355px;
-    margin: 15px;
-    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+ }
+ .gallery .boxes .box1 .background img:hover{
+  transform:rotate(1deg);
  }
  .gallery .boxes .box1 .background2 {
    background-image: url(../images/gallery-02.png);
