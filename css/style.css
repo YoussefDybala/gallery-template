@@ -444,7 +444,7 @@ height: 90vh;
         height: fit-content;
         background-color: #eee;
         position: relative;
-        right: -28px;
+        right: -8px;
       }
 }
 .team-members .boxes .box3 img {
@@ -502,4 +502,52 @@ top: 100px;
     position: relative;
     box-shadow: 0 5px 5px gray;
   }
+  .serv-cont {
+    text-align: center;
+    margin-top: 50px;
+  }
+ .serv-cont i {
+  font-size: 80px;
+  color: gray;
+ }
+ .serv-cont h4 {
+  color: #1787e0;
+  margin: 10px;
+  font-size: 30px;
+ }
+ .serv-foot {
+  display: flex;
+  justify-content: space-between;
+ 
+  margin-top: 27px;
+  background-color: #faf8f8;
+ }
+ .serv-foot span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #1787e0;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ }
+ .serv-foot p {
+ padding: 13px;
+ font-size: 18px;
+  color: #1787e0;
+ }
+ .serv-foot span:after{
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 50px;
+  background-color: rgb(184, 184, 184);
+  top: 0;
+  left: 80px;
+  transform: skewX(-30deg);
+ }
   /* ///////////// end services //////////  */
