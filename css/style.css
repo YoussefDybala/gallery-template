@@ -143,6 +143,7 @@ html {
         
       }
   }
+
   header .logo {
     color: #1787e0;
     font-size: 25px;
@@ -163,6 +164,14 @@ html {
     background-color: #1787e0;
     color: white;
     border-radius:8px ;
+  }
+  .main-header{
+    position: absolute;
+    background-color: #056abd;
+    transform: translateY(-500px);
+  }
+  .open {
+    transform: translateY(200px);
   }
   /* /////////// End header /////  */
   /* /////////// start landing //////////  */
@@ -962,3 +971,391 @@ top: 100px;
     background-color: #1787e0;
   }
   /* //////////// end pricing /////////////  */
+  /* /////////// start top videos ////////////  */
+  .vedios {
+    padding: 70px 0;
+    background-color: #eee;
+  }
+  .vid {
+    background-color: #ffffff;
+    width: 100%;
+    height: 670px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(165, 165, 165);
+  }
+  .vid .images {
+    background-color: #bcbcbc;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .vid img {
+    width: 100%;
+    position: relative;
+    
+  }
+  .vid .images div {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+  }
+  @media (max-width :768px) {
+    .vid {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+    }
+    
+    .vid img {
+      position: relative;
+      right: 0;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    
+    .vid .vid-cont {
+      width: 100%;
+    }
+    .vid-head {
+      width: 100%;
+    }
+  }
+  .vid-head {
+    background-color: #d8d8d8;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .vid-box {
+    padding: 20px;
+    border-top: 1px solid gray;
+    transition: 0.3s;
+  }
+  .vid-box:hover {
+    background-color: #eee;
+  }
+  .vid-box p {
+    margin-bottom: 9.8px;
+  }
+  .vid-box span {
+    color: gray;
+  }
+  /* /////////// end top videos ////////////  */
+  /* ////////// start awesome stats /////////  */
+  .awesome {
+    padding: 70px;
+    background-image: url(../images/cat-04.jpg);
+    background-size: cover;
+    position: relative;
+
+  }
+  .awesome::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.868);
+    left: 0;
+    top: 0;
+    
+  }
+  .title h3{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    z-index: 9999;
+    color: black;
+    position: relative;
+  }
+  .boxes .box6{
+    width: 250px;
+    height: 200px;
+    background-color: #ffffff;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  @media (max-width :768px) {
+    .boxes .box6 {
+      height: fit-content;
+      background-color: #eee;
+      transition: 0.5s;
+      text-align: center;
+    }
+  }
+  @media (max-width :768px) {
+    .awesome h3 {
+      font-size: 24px;
+    }
+  }
+  .boxes .box6 i {
+    margin: 10px 0 ;
+    font-size: 40px;
+  }
+  .boxes .box6 h4 {
+    font-size: 45px;
+  }
+  .boxes .box6 p {
+    margin: 15px 0;
+    color: #1787e0;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  /* ///////////////////// end awesome stats //////////////  */
+  /* ////////////// start discount //////  */
+  .discount {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+  }
+  .discount .d-1{
+    padding: 70px 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1787e0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .discount .d-1 h3 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .discount .d-1 p {
+    text-align: center;
+    padding: 30px;
+    width: 400px;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+  }
+  .discount .d-1 img {
+    width: 300px;
+    height: 300px;
+  }
+  .discount .d-2{
+    width: 50%;
+    height: 100vh;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .discount .d-2 h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  @media (max-width : 768px ) {
+    .discount .d-2 h3 {
+      font-size: 26px;
+    }
+  }
+  .discount .d-2 input {
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: #f3f3f3;
+    margin: 15px 0;
+    height: 40px ;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+  }
+  .discount .d-2  .tall {
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: #f3f3f3;
+    margin: 15px 0;
+    height: 200px ;
+    border-bottom: 1px solid gray;
+  }
+  .discount .d-2 .but{
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: #1787e0;
+    margin: 15px 0;
+    height: 50px ;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  .discount .d-2 .but:hover {
+    background-color: #056abd;
+  }
+  @media (max-width : 992px) {
+    .discount {
+      height: fit-content;
+    }
+    .discount .d-1{
+      width: 100%;
+      background-color: #1787e0;
+      height: fit-content;
+    }
+    .discount .d-2{
+      width: 100%;
+      height: fit-content;
+    }
+  }
+    /* ////////////// end discount //////  */
+    /* //////////// start footer //////////  */
+    .footer{
+      background-color: black;
+      color: white;
+      width: 100%;
+      height: fit-content;
+      padding: 70px 0;
+    }
+    .footer   .boxes .box7{
+      width: 260px;
+      height: fit-content;
+      transition: 0.5s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      color: gray;
+    }
+    .footer   .boxes .box7 .foot-url {
+      text-align: left;
+      
+    }
+    .footer   .boxes .box7 .foot-url h4{
+      font-size: 35px;
+      margin-bottom: 15px;
+      color: white;
+    }
+    .footer   .boxes .box7 .foot-url i {
+      color: #eee;
+      padding: 20px;
+      font-size: 25px;
+      margin-left: 5px;
+      background-color: gray;
+      transition: 0.3s;
+      margin-bottom: 15px;
+    }
+    .footer   .boxes .box7 .foot-url i:hover {
+      background-color: #056abd;
+    }
+    .footer   .boxes .box7 .foot-url p{
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .footer   .boxes .box7 .links  {
+      font-weight: bold;
+      font-size: 17px;
+      font-weight: normal;
+      padding: 15px;
+      transition: 0.3s;
+      position: relative;
+    }
+    .footer   .boxes .box7 .links::after {
+      content: '';
+      position: absolute;
+      width: 180px;
+      height: 1px;
+      left: 14px;
+      top: 50px;
+      background-color: gray;
+    }
+    .footer   .boxes .box7 .links:hover {
+      margin-left: 15px;
+      color: white;
+    }
+    .footer   .boxes .box7 .links span {
+      font-weight: bold;
+      color: #056abd;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+    .location {
+      display: flex;
+      margin-bottom: 20px;
+      
+    }
+    .location i {
+      font-size: 30px;
+      color: #056abd;
+      margin-top: 10px;
+      text-align: left;
+    }
+    .location p {
+      font-size: 15px;
+      margin-bottom:15px ;
+    }
+    .locationn {
+      display: flex;
+      margin-bottom: 20px;
+      position: relative;
+      left: -50px;
+    }
+    .locationn i {
+      font-size: 30px;
+      color: #056abd;
+      margin-top: 10px;
+      text-align: left;
+    }
+    .locationn p {
+      font-size: 15px;
+      margin-bottom:15px ;
+    }
+    .boxes .box7 .photos {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 15px;
+    }
+    .boxes .box7 .picture {
+      width: 70px;
+      height: 70px;
+      background-color: white;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .boxes .box7 .picture img{
+      width: 70px;
+      height: 70px;
+      padding: 2px;
+    }
+    @media (max-width :768px) {
+      .boxes .box7 {
+        height: fit-content;
+        transition: 0.5s;
+        text-align: center;
+      }
+      .footer   .boxes .box7 .foot-url {
+        text-align: center;
+      }
+      .location {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .location i {
+        margin-bottom: 10px;
+      }
+      .locationn i {
+        margin-bottom: 10px;
+      }
+      .locationn {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        left: 0;
+      }
+    }
+    /* //////////// end footer //////////  */
