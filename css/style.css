@@ -454,19 +454,29 @@ height: 90vh;
         position: relative;
         right: -8px;
       }
+      .team-members .boxes .box3 img {
+        position: absolute;
+        width: 270px;
+        height: 20px;
+        border-radius: 8px;
+        left: -30px;
+        top: 30px;
+        transition: 0.3s;
+        /* display: none; */
+      }
 }
 .team-members .boxes .box3 img {
   position: absolute;
-  width: 290px;
-  height: 290px;
+  width: 270px;
+  height: 270px;
   border-radius: 8px;
-  left: -30px;
+  left: -20px;
   top: 30px;
   transition: 0.3s;
   /* display: none; */
 }
 .team-members .boxes .box3 img:hover {
-  filter: sepia(70%);
+  filter: sepia(100%);
 }
 .team-members ul li {
   padding: 15px;
@@ -611,7 +621,7 @@ top: 100px;
   }
  @media (max-width :768px) {
   .progres {
-    width: 330px;
+    width: 290px;
     height: 30px;
     background-color: white;
     margin: 20px 0;
