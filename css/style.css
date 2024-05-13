@@ -935,6 +935,7 @@ top: 100px;
     font-weight: bold;
     transform: rotate(90deg);
     top: 56PX;
+    right: 0;
   }
   .boxes .box5::before{
     content: '';
@@ -942,12 +943,12 @@ top: 100px;
     width: 0;
     height: 0;
     background-color: transparent;
-    left: 285px;
-    top: 96px;
-    border-top: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid #eee;
-    border-left: 30px solid transparent;
+    left: 257px;
+    top: 109px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 18px solid #eee;
+    border-left: 20px solid transparent;
     z-index: 1;
 }
   
