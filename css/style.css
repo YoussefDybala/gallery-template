@@ -34,8 +34,11 @@ html {
     .containar {
       width: 750px;
     }
+    body {
+      overflow-x: hidden;
+    }
   }
-  
+
   /* Medium */
   @media (min-width: 992px) {
     .containar {
@@ -653,12 +656,17 @@ top: 100px;
   }
   @media (max-width :768px) {
     .work-cont .images img {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       text-align: center;
-      margin-left: 1px;
+
     }
 
+    .work-cont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .wor-box {  
       width: 330px;
       height: fit-content;
@@ -666,6 +674,7 @@ top: 100px;
       display: flex;
       flex-direction: column;
       text-align: center;
+   
 
     }
     .w-cont{
@@ -800,8 +809,8 @@ top: 100px;
       justify-content: center;
       align-items: center;
       position: relative;
-      left: 5px;
-      width: 320px;
+      left: -5px;
+      width: 310px;
       margin: 30px 0;
       height: fit-content;
     }
