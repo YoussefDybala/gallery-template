@@ -139,7 +139,7 @@ html {
       .links li {
 
         position: relative;
-        left: -15px;
+        left: -20px;
         
       }
   }
@@ -667,7 +667,7 @@ top: 100px;
     .wor-box {
       width: 330px;
       height: fit-content;
-      left: 25px;
+      left: 12px;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -721,6 +721,17 @@ top: 100px;
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+  @media (max-width : 786px) {
+    .even-cont .e-con {
+      display: flex;
+      gap: 3px;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    
   }
   .even-cont .e-con .e-box {
     width: 80px;
