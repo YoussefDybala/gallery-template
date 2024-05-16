@@ -229,9 +229,10 @@ html {
     .main-header{
       position: absolute;
       background-color: #ffffff;
-      width: 100%;
+      width: 97%;
       height: fit-content;
       top: 112px;
+      left: -10px;
     }
     .main-header .mega-links {
       display: flex;
@@ -1342,6 +1343,7 @@ top: 100px;
     .discount .d-2{
       width: 100%;
       height: fit-content;
+      background-color: #bcbcbc;
     }
   }
     /* ////////////// end discount //////  */
