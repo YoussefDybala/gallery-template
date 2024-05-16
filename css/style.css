@@ -231,7 +231,7 @@ html {
       background-color: #ffffff;
       width: 700px;
       height: fit-content;
-      left: 100px;
+      left: 120px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -248,7 +248,7 @@ html {
       border-radius: 50%;
       color: white;
       font-weight: bold;
-      top: -95px;
+      top: -950px;
       cursor: pointer;
       transition: 0.2s;
       left: 65px;
@@ -270,7 +270,8 @@ html {
       margin-top: 0;
     }
     .main-header ul li {
-     text-align: center;
+     text-align: left;
+     margin-left: 20px;
     }
     .main-header ul li:not(:last-child):after {
       content: '';
@@ -302,7 +303,7 @@ html {
       top: -230px;
       cursor: pointer;
       transition: 0.2s;
-      left: 65px;
+      left: 35px;
     }
   }
   .open {
